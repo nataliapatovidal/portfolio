@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap');
+
+@font-face {
+    font-family: 'bodoni';
+    src: url('../assets/fonts/Bodoni Cyrillic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Amsterdam';
+    src: url('../assets/fonts/AmsterdamOne-eZ12l.ttf') format('truetype');
+}
+
+
+/* Logo con fondo arriba */
+.logo-section {
+    position: relative;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    box-shadow: 0 2px 5px rgb(212, 133, 212);
+    height: 300px; /* Ajusta la altura según sea necesario */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Logo a la derecha */
+    padding-right: 4rem;
+    padding-top: 0;
+    background-image: url('../assets/img/fondo-logo.png'); /* Imagen de fondo */
+    background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+    background-position: center center; /* Centra la imagen */
+    background-repeat: no-repeat;
+  }
+  
+  
+  .logo-container {
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Estilos del logo */
+  .initials {
+    font-family: 'bodoni';
+    font-size: 6rem;
+    color: #912873;
+    z-index: 1;
+    position: relative;
+    text-align: center;
+  }
+  
+  .nombre-logo {
+    font-family: 'Amsterdam';
+    font-size: clamp(2rem, 2vw, 3rem);
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    white-space: nowrap;
+    pointer-events: none;
+  }
+  
+  /* Layout inferior */
+  .sobre-mi-wrapper {
+    display: flex;
+    align-items: center; /* Centra la foto de perfil y los textos verticalmente */
+    gap: 3.125rem;
+    padding: 1.875rem 0rem;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content:center;
+    text-align: center;
+    background-color:#e9e6e9;
+    background-size: cover;
+    position: relative;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    overflow: hidden;
+    
+    
+  }
+  
+  .foto-perfil img {
+    width: 18.75rem; /* Antes: 160px */
+    height: 18.75rem;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #ccc;
+  }
+  
+  .texto-presentacion {
+    max-width: 600px;
+  }
+  
+  .texto-presentacion p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+    font-family: 'Lora', serif;
+  }
+  
+  .texto-presentacion h4 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #868486;
+    font-family: 'Lora', serif;
+  }
+  
+  .texto-presentacion a.btn {
+    margin-top: 1rem;
+  }
+  
+  .texto-presentacion h3 {
+    font-size: 1.8rem;
+    margin-top: 2rem; /* Nuevo: separa del logo o imagen de arriba */
+    margin-bottom: 1rem;
+    font-family: 'bodoni';
+    color: #868486;
+    font-family: 'Lora', serif;
+    
+  }
+
+  .texto-presentacion a.btn {
+    margin-top: 1rem;
+    background-color: #b44995; /* Rosa suave */
+    border-color: #b44995;
+    color: #fff;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  
+  .texto-presentacion a.btn:hover {
+    background-color: #912873;
+    border-color: #912873;
+  }
+  
+  .texto-presentacion h4 a i {
+    font-size: 1.5rem;
+    color: #b44995;
+    transition: color 0.3s ease;
+    margin: .625rem;
+  }
+  
+  .texto-presentacion h4 a i:hover {
+    color: #912873;
+  }
+
+  @media (max-width: 991px) {
+  
+    .logo-container{
+      background-color: #b4499652;
+      padding: 0px 50px;
+      border-radius: 5px;
+      width: fit-content; /* 👈 Solo lo que necesita */
+      margin-left: 1rem;   /* 👈 Separación del borde izquierdo */
+      display: block;
+    }
+  }

@@ -1,0 +1,107 @@
+@font-face {
+    font-family: 'bodoni';
+    src: url('../assets/fonts/Bodoni Cyrillic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Amsterdam';
+    src: url('../assets/fonts/AmsterdamOne-eZ12l.ttf') format('truetype');
+}
+
+.navbar {
+    background-color: #c7a7c7; /* gris más claro que el anterior */
+    background-image: url('https://www.transparenttextures.com/patterns/asfalt-light.png');
+    background-repeat: repeat;
+    box-shadow: 0 2px 5px rgb(212, 133, 212);
+    min-height: 1.875rem;
+    padding-top: 1.25rem;
+    padding-bottom: 1.125rem;
+    padding-right: 2rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+.container-fluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.subtitulo-logo {
+    font-family: 'bodoni';
+    font-size: clamp(.75rem, .875rem, 1rem);
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: rgba(66, 8, 66, 0.1);
+    padding: .125rem .3125rem;
+    border-radius: 5px;
+    display: inline-block;
+    max-width: 100%;
+    text-align: left;
+    white-space: normal;
+    z-index: 2;
+    position: relative;
+    margin-top: 0.2rem;
+    ;
+}
+.navbar-toggler {
+    order: 2; /* El botón hamburguesa se posiciona a la derecha */
+}
+
+.navbar-nav .nav-link {
+    color: rgb(253, 253, 253);
+    transition: color 0.3s ease;
+    font-size: 1.125rem;
+    font-family: 'bodoni';
+}
+
+.navbar-nav .nav-link:hover {
+    color: rgba(71, 70, 71, 0.75);
+    
+}
+
+.navbar-nav .nav-item + .nav-item {
+    border-left: 1px solid rgb(252, 250, 250); /* 👈 Línea sutil vertical */
+    padding-left: 1rem;
+    margin-left: 1rem;
+}
+
+.navbar-title h1 {
+    font-family: 'bodoni';
+    font-size: 3rem;
+    color: #302d2d;
+    margin-top: 5rem;
+}
+
+.nav-creativa {
+    margin-left: 2rem;
+    padding-left: 1rem;
+    border-left: 1px solid rgba(255, 192, 239, 0.3);
+    text-align: left;
+}
+
+
+#navbarNav {
+    margin-right: 2rem;
+}
+
+@media (max-width: 991px) {
+    .navbar-toggler {
+        background-color: rgba(66, 8, 66, 0.1);
+        padding: 1rem;
+        border-radius: 5px;
+        width: fit-content;
+        margin-left: auto;   /* ✅ Lo empuja hacia la derecha */
+        display: block;
+        margin-right: 1rem;
+    }
+    .nav-creativa{
+        margin: 2px 2px 5px 18px;
+    }
+}
+
+
