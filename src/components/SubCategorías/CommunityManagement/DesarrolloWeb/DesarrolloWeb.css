@@ -1,0 +1,15 @@
+/* Estilos para los botones */
+.btn-primary {
+    background-color: #b44995; /* Rosa suave, igual al botón de descarga del CV */
+    border-color: #b44995;
+    color: #fff;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    margin-top: 1rem; /* Espacio entre el texto y el botón */
+  }
+  
+  .btn-primary:hover {
+    background-color: #912873; /* Rosa más oscuro */
+    border-color: #912873;
+  }
+  

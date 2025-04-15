@@ -2,6 +2,10 @@ import './App.css';
 import NavBar from './components/NavBar/NavBar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import SobreMi from './components/SobreMi/SobreMi';
+import MisProyectos from './components/MisProyectos/MisProyectos';
+import Skills from './components/Skills/Skills';
+import { Component } from 'react';
+
 
 function App() {
   return (
@@ -10,16 +14,9 @@ function App() {
       
       <main className="container  mt-2 ">
         <SobreMi />
+        <MisProyectos />
+        <Skills />
 
-        <section id="servicios" className="py-5">
-          <h2>Diseños</h2>
-          <p>Aquí vas a encontrar algunos proyectos de diseño gráfico, interfaces web y branding.</p>
-        </section>
-
-        <section id="contacto" className="py-5">
-          <h2>Contacto</h2>
-          <p>¿Querés trabajar conmigo? ¡Escribime o descargá mi CV!</p>
-        </section>
       </main>
     </div>
   );

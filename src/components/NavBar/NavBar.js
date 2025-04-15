@@ -13,13 +13,13 @@ const NavBar = () => {
                 <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul className="navbar-nav ms-auto">
                         <li className="nav-item">
-                            <a className="nav-link" href="#Sobre-MI">Sobre Mi</a>
+                            <a className="nav-link" href="#SobreMi">Sobre Mi</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#diseños">Diseños</a>
+                            <a className="nav-link" href="#MisProyectos">Mis Proyectos</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#contacto">Contacto</a>
+                            <a className="nav-link" href="#Skills">Skills</a>
                         </li>
                     </ul>
                 </div>

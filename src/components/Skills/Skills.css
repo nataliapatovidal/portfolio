@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap');
+
+.recuadro-skills {
+  background-color: #e9e6e9;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  box-shadow: 0 5px 10px rgba(122, 122, 122, 0.6);
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: .3125rem;
+  padding: .3125rem 5rem;
+}
+
+.recuadro-skills h3 {
+  font-family: 'Lora', serif;
+  font-size: 1.75rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #868486;
+  scroll-behavior: smooth;
+  text-transform: uppercase; /* Para asegurarnos que el texto esté en mayúsculas */
+}
+
+/* CONTENEDOR GENERAL DE HABILIDADES */
+.skills-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  padding: .3125rem 5rem;
+}
+
+/* CADA ÍTEM DE HABILIDAD */
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent;
+  padding: 8px;
+  border-radius: 8px;
+  transition: transform 0.5s ease-in-out;
+  max-width: 6.25rem;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.7s forwards; /* Cambio en el tiempo para un efecto más suave */
+}
+
+.skill-item:nth-child(1) { animation-delay: 0.1s; }
+.skill-item:nth-child(2) { animation-delay: 0.2s; }
+.skill-item:nth-child(3) { animation-delay: 0.3s; }
+.skill-item:nth-child(4) { animation-delay: 0.4s; }
+.skill-item:nth-child(5) { animation-delay: 0.5s; }
+.skill-item:nth-child(6) { animation-delay: 0.6s; }
+.skill-item:nth-child(7) { animation-delay: 0.7s; }
+.skill-item:nth-child(8) { animation-delay: 0.8s; }
+
+/* ÍCONOS: FONT AWESOME Y SVG */
+.skill-item img,
+.skill-item .skill-icon {
+  width: 30px;
+  height: 30px;
+}
+
+/* COLORES PERSONALIZADOS POR HERRAMIENTA */
+.skill-item .skill-icon.figma {
+  color: #F24E1E;
+}
+
+.skill-item .skill-icon.html {
+  color: #E34F26;
+}
+
+.skill-item .skill-icon.css {
+  color: #1572B6;
+}
+
+.skill-item .skill-icon.js {
+  color: #F7DF1E;
+}
+
+.skill-item .skill-icon.react {
+  color: #61DAFB;
+}
+
+.skill-item .skill-icon.photoshop {
+  fill: #31A8FF;
+}
+
+.skill-item .skill-icon.illustrator {
+  fill: #FF9A00;
+}
+
+.skill-item .skill-icon.corel {
+  fill: #000000;
+}
+
+/* EFECTO HOVER GENERAL */
+.skill-item:hover {
+  transform: translateY(-5px);
+  background-color: rgba(122, 122, 122, 0.295);
+  margin: .3125rem;
+}
+
+.skill-item:hover p {
+  color: #912873;
+}
+
+/* ANIMACIÓN */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* RESPONSIVE: AJUSTES PARA PANTALLAS MÁS CHICAS */
+@media (max-width: 768px) {
+  .skills-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1.5rem;
+    gap: 20px;
+  }
+
+  .skill-item {
+    max-width: 80px;
+    padding: 10px;
+  }
+
+  .skill-item img,
+  .skill-item .skill-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .skill-item p {
+    font-size: 0.9rem;
+    text-align: center;
+    text-transform: uppercase; /* Para que el texto dentro de los íconos también esté en mayúsculas */
+  }
+}
+
