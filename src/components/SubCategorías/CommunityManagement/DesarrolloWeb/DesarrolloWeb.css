@@ -13,3 +13,12 @@
     border-color: #912873;
   }
   
+  .DesarrolloWeb h3 {
+    font-family: 'Lora', serif;
+    font-size: 2rem;
+    color: #b44995;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 1rem 0;
+    text-align: center;
+  }

@@ -12,7 +12,7 @@ const SobreMi = () => {
       setTexto(mensaje.slice(0, i + 1));
       i++;
       if (i === mensaje.length) clearInterval(intervalo);
-    }, 100); // velocidad de tipeo
+    }, 100); 
     return () => clearInterval(intervalo);
   }, []);
 
@@ -25,12 +25,11 @@ const SobreMi = () => {
         </div>
       </div>
       <div className="sobre-mi-wrapper container-fluid">
-        {/* Foto de perfil */}
+        
         <div className="foto-perfil">
           <img src="/perfil.png" alt="Foto de Natalia Vidal" />
         </div>
-  {/* Textos */}
-  <div className="texto-presentacion">
+    <div className="texto-presentacion">
           <h3 className="maquina-escribir">{texto}<span className="cursor">|</span></h3>
           <p>Diseñadora creativa, busco nuevos retos en una empresa que promueva mi crecimiento profesional y me permita aportar valor con mis habilidades. Actualmente estoy dando mis primeros pasos como desarrolladora web, combinando creatividad con conocimientos técnicos para crear soluciones.</p>
           <h4>Si quieres ponerte en contacto conmigo escribime a nataliapatriciavidal@gmail.com{" "}

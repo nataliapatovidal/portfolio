@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'bodoni';
-    src: url('../assets/fonts/Bodoni Cyrillic.ttf') format('truetype');
+    src: url('../../../public/assets/fonts/Bodoni\ Cyrillic.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Amsterdam';
-    src: url('../assets/fonts/AmsterdamOne-eZ12l.ttf') format('truetype');
+    src: url('../../../public/assets/fonts/AmsterdamOne-eZ12l.ttf') format('truetype');
 }
 
 .navbar {
