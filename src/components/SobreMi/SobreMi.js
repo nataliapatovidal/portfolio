@@ -37,8 +37,8 @@ const SobreMi = () => {
               <i className="bi bi-envelope-fill"></i>
             </a>
             <a href="https://www.linkedin.com/in/natalia-p-vidal" target="_blank" rel="noopener noreferrer" aria-label="Ir a LinkedIn" title="Ver perfil en LinkedIn">
-  <i className="bi bi-linkedin"></i>
-</a>
+            <i className="bi bi-linkedin"></i>
+            </a>
           </h4>
           <a href="/CV-NataliaVidal.pdf" download className="btn btn-primary mt-3">Descargar mi CV</a>
         </div>   

@@ -28,17 +28,17 @@ const Skills = () => {
           <FontAwesomeIcon icon={faReact} size="3x" className="skill-icon react" />
           <p>React JS</p>
         </div>
-        {/* Usando el ícono SVG de Photoshop */}
+    
         <div className="skill-item">
           <img src="/photoshop-svgrepo-com.svg" alt="Photoshop" className="skill-icon photoshop" width="40" height="40" />
           <p>Photoshop</p>
         </div>
-        {/* Usando el ícono SVG de Illustrator */}
+        
         <div className="skill-item">
           <img src="/adobe-illustrator-svgrepo-com.svg" alt="Illustrator" className="skill-icon illustrator" width="40" height="40" />
           <p>Illustrator</p>
         </div>
-        {/* Usando el ícono de CorelDRAW */}
+        
         <div className="skill-item">
           <img src="/corel.png" alt="CorelDRAW" className="skill-icon corel" width="40" height="40" />
           <p>CorelDRAW</p>

@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import './MisProyectos.css';
-import DiseñoGrafico from '../SubCategorías/CommunityManagement/DesarrolloWeb/DiseñoGrafico/DiseñoGrafico';
+import DiseñoGrafico from '../SubCategorías/CommunityManagement/DiseñoGrafico/DiseñoGrafico';
 import DesarrolloWeb from '../SubCategorías/CommunityManagement/DesarrolloWeb/DesarrolloWeb';
-import CommunityManagement from '../SubCategorías/CommunityManagement/CommunityManagement';
+import CommunityManagement from '../SubCategorías/CommunityManagement/CommunityManagement/CommunityManagement';
 
 const MisProyectos = () => {
   const [seccionActiva, setSeccionActiva] = useState('diseño');

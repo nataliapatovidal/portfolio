@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap');
+
+@font-face {
+    font-family: 'bodoni';
+    src: url('../../../public/assets/fonts/Bodoni Cyrillic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Amsterdam';
+    src: url('../../../public/assets/fonts/AmsterdamOne-eZ12l.ttf') format('truetype');
+}
+
+footer {
+    width: 100vw; 
+    background-color: #c7a7c7;
+    box-shadow: 0 .125rem .3125rem rgb(212, 133, 212);
+    margin-left: calc(-50vw + 50%);
+    padding: 0.5rem 2rem;  
+    height: 5rem; 
+    display: flex;
+    justify-content: center;  
+    align-items: center;  
+}
+
+.container-fluid-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;  
+}
+
+.logo1-container {
+    position: relative;
+    width: auto;
+    margin-right: auto;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+.initials1 {
+    font-family: 'bodoni';
+    font-size: 3.25rem;  
+    color: #912873;
+    position: relative;
+    padding-left: 1.875rem;
+    z-index: 2;
+}
+
+.nombre-logo1 {
+    font-family: 'Amsterdam';
+    font-size: 1.375rem; 
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    white-space: nowrap;
+    pointer-events: none;
+    padding-left: 1.875rem;
+}
+
+.contact-section {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.social-links a i {
+    font-size: 1.5rem;
+    color:  #912873;
+    transition: color 0.3s ease;
+}
+
+.social-links a i:hover {
+    color: #912873;
+}
+
+.contact-section .btn {
+    background-color: #912873;
+    border: none;
+    padding: 0.25rem 0.5rem;  
+    font-size: 0.875rem; 
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Lora', serif;
+}
+
+.contact-section .btn:hover {
+    background-color: #b44995;
+    color: white;
+}
+
+@media (max-width: 768px) {
+footer {
+    height: auto;
+    padding: 1rem;
+    text-align: center;
+}
+
+.container-fluid-footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem; 
+}
+
+.logo1-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.5rem; 
+    width: 100%;
+    height: 1.25rem; 
+}
+
+.initials1 {
+    font-size: 2.2rem; 
+    color: #912873;
+    position: relative;
+    z-index: 2;
+}
+
+.nombre-logo1 {
+    font-size: 1rem;
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    white-space: nowrap;
+    pointer-events: none;
+    text-align: center;
+}
+
+.contact-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0;
+}
+
+.social-links {
+    justify-content: center;
+    gap: 0.5rem; 
+}
+
+.contact-section .btn {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+}
+}

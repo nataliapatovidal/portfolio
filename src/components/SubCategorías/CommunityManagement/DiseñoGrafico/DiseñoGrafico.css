@@ -16,22 +16,22 @@
 
 
 .card {
-  max-width: 500px;
+  max-width: 31.25rem;
   width: 100%;
   background-color: #fff;
-  border-radius: 12px;
+  border-radius: .75rem;
   overflow: hidden;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 .3125rem .9375rem rgba(0,0,0,0.1);
   transition: transform 0.3s ease;
 }
 
 .card img {
-  width: 100%; /* Hace que el video ocupe todo el ancho de la tarjeta */
-  height: auto; /* Mantiene la proporción del video */
-  object-fit: cover; /* Ajusta el contenido del video para que cubra el área sin distorsionarse */
+  width: 100%; 
+  height: auto; 
+  object-fit: cover; 
   display: block;
   margin-left: auto;
-  margin-right: auto; /* Centra el video horizontalmente */
+  margin-right: auto; 
 }
 
 .card-texto-diseño {
@@ -53,6 +53,6 @@
     color: #912873;
     font-size: 1.125rem;
     position: relative;
-    margin-top: 1rem; /* Ajustá este valor según el espacio que quieras */
+    margin-top: 1rem; 
     margin-bottom: 0.5rem;
 }

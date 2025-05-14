@@ -3,12 +3,12 @@ import './DesarrolloWeb.css';
 
 const DesarrolloWeb = () => {
   return (
-    <section id="DesarrolloWeb" className="DesarrolloWeb py-5">
+    <section id="DesarrolloWeb" className="DesarrolloWeb py-3">
 
-      <div className="container-fluid p-0">
+      <div className="container px-4 px-md-6">
         <div className="row justify-content-center">
-          {/* Tarjeta 1 */}
-         <div className="col-md-6 col-lg-4 col-xl-3 mb-4 d-flex justify-content-center">
+  
+        <div className="col-md-6 col-lg-4 col-xl-3 mb-4 d-flex justify-content-center">
 
             <div className="dw-card h-100 shadow w-100">
               <video className="dw-card-img-top" controls>
@@ -35,7 +35,6 @@ const DesarrolloWeb = () => {
             </div>
           </div>
 
-          {/* Tarjeta 2 */}
           <div className="col-md-6 col-lg-4 col-xl-3 mb-4 d-flex justify-content-center">
 
             <div className="dw-card h-100 shadow w-100">

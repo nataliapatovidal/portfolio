@@ -3,11 +3,13 @@ import './CommunityManagement.css';
 
 const CommunityManagement = () => {
   return (
-    <section id="CommunityManagement" className=" CommunityManagement py-5">
+    <section id="CommunityManagement" className=" CommunityManagement py-3">
+      <div className="container px-4 px-md-6">
+      <div className="row justify-content-center">
+        <div className="col-md-6 col-lg-4 col-xl-3 mb-4 d-flex justify-content-center">
 
-      <div className="row mt-4">
-        <div className="col-md-4 mb-4">
-          <div className="card h-100 shadow">
+          <div className="card h-100 shadow w-100">
+
             <video className="card-img-top" controls>
               <source src="/assets/videos/osadia-instagram.mp4" type="video/mp4" />
               Tu navegador no soporta el video.
@@ -28,8 +30,8 @@ const CommunityManagement = () => {
         </div>
 
 
-      
-        {/* Podés duplicar esta card para otros proyectos de redes */}
+      </div>
+        {/* duplicar  card aca */}
       </div>
     </section>
   );

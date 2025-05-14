@@ -9,10 +9,10 @@ import {
 
 const DiseñoGrafico = () => {
   return (
-    <section id="DiseñoGrafico" className="diseño-grafico py-5">
-      <div className="container px-4 px-md-5">
+    <section id="DiseñoGrafico" className="diseño-grafico py-3">
+      <div className="container px-4 px-md-6">
         <div className="row justify-content-center">
-          <Row className="g-4 justify-content-center">
+          <Row className=" justify-content-center">
               <Col lg={4} md={6}>
                 <div className="card">
                   <div className="card-texto-diseño">
@@ -30,7 +30,6 @@ const DiseñoGrafico = () => {
                 </div>
               </Col>
 
-            {/* Card 2 - Mi Pueblo Esperanza */}
               <Col lg={4} md={6}>
                 <div className="card">
                   <div className="card-texto-diseño">
@@ -47,7 +46,6 @@ const DiseñoGrafico = () => {
                 </div>
               </Col>
 
-            {/* Card 3 - Poder Judicial */}
               <Col lg={4} md={6}>
                 <div className="card">
                   <div className="card-texto-diseño">

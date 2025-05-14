@@ -7,23 +7,20 @@
     rgb(233, 232, 230) 80%,  
     rgb(233, 232, 230) 10%,  
     rgba(233, 232, 230, 0) 100%);
-    
   width: 100vw;
   margin-left: calc(-50vw + 50%);
   padding: 0;
 }
 
-
-/* Tarjetas */
 .dw-card {
-  border-radius: 12px; /* Agregar borde redondeado */
-  overflow: hidden; /* Asegura que las esquinas redondeadas no sean afectadas por el contenido */
+  border-radius: .75rem; 
+  overflow: hidden; 
 }
 
 .dw-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(180, 73, 149, 0.3);
-  border-radius: 12px; /* Asegura que el borde redondeado se mantenga al hacer hover */
+  transform: translateY(-0.3125rem);
+  box-shadow: 0 .5rem 1.25rem rgba(180, 73, 149, 0.3);
+  border-radius: .75rem; 
 }
 
 .dw-card-body {
@@ -48,12 +45,12 @@
 
 .dw-card video,
 .dw-card img {
-  width: 100%; /* Hace que el video ocupe todo el ancho de la tarjeta */
-  height: auto; /* Mantiene la proporción del video */
-  object-fit: cover; /* Ajusta el contenido del video para que cubra el área sin distorsionarse */
+  width: 100%;
+  height: auto; 
+  object-fit: cover; 
   display: block;
   margin-left: auto;
-  margin-right: auto; /* Centra el video horizontalmente */
+  margin-right: auto; 
 }
 
 .dw-btn {
@@ -67,7 +64,7 @@
   text-align: center;
   display: inline-block;
   text-decoration: none;
-  border-radius: 4px;
+  border-radius: .25rem;
 }
 
 .dw-btn:hover {
@@ -75,12 +72,7 @@
   border-color: #912873;
 }
 
-/* Responsivo */
 @media (max-width: 768px) {
-  .dw-card video,
-  .dw-card img {
-    max-height: 180px;
-  }
 
   .dw-card-title {
     font-size: 1.1rem;

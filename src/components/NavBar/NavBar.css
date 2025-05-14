@@ -9,7 +9,7 @@
 }
 
 .navbar {
-    background-color: #c7a7c7; /* gris más claro que el anterior */
+    background-color: #c7a7c7; 
     background-image: url('https://www.transparenttextures.com/patterns/asfalt-light.png');
     background-repeat: repeat;
     box-shadow: 0 2px 5px rgb(212, 133, 212);
@@ -49,7 +49,7 @@
     ;
 }
 .navbar-toggler {
-    order: 2; /* El botón hamburguesa se posiciona a la derecha */
+    order: 2; 
 }
 
 .navbar-nav .nav-link {
@@ -65,7 +65,7 @@
 }
 
 .navbar-nav .nav-item + .nav-item {
-    border-left: 1px solid rgb(252, 250, 250); /* 👈 Línea sutil vertical */
+    border-left: 1px solid rgb(252, 250, 250); 
     padding-left: 1rem;
     margin-left: 1rem;
 }
@@ -95,13 +95,42 @@
         padding: 1rem;
         border-radius: 5px;
         width: fit-content;
-        margin-left: auto;   /* ✅ Lo empuja hacia la derecha */
+        margin-left: auto;   
         display: block;
         margin-right: 1rem;
     }
     .nav-creativa{
         margin: 2px 2px 5px 18px;
     }
+.navbar-collapse {
+    display: flex !important;
+    flex-direction: column;
+    align-items: flex-end; 
+    background-color: #c7a7c7; 
+    padding: 1rem;
+    position: absolute; 
+    top: 100%;           
+    right: 0;            
+    width: max-content;  
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    z-index: 1000;
 }
 
+.navbar-nav {
+    width: auto;
+}
 
+.navbar-nav .nav-item {
+    border-left: none !important;
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+    width: 100%;
+    text-align: right;  
+}
+
+.navbar-nav .nav-link {
+    padding-left: 0;
+    padding-right: 1rem; 
+}
+}

@@ -10,34 +10,28 @@
     src: url('../../../public/assets/fonts/AmsterdamOne-eZ12l.ttf') format('truetype');
 }
 
-
-
-
-/* Logo con fondo arriba */
 .logo-section {
     position: relative;
     width: 100vw;
     margin-left: calc(-50vw + 50%);
-    height: 320px; /* Ajusta la altura según sea necesario */
+    height: 20rem; 
     overflow: hidden;
     display: flex;
     align-items: center;
-    justify-content: flex-end; /* Logo a la derecha */
+    justify-content: flex-end;
     padding-right: 4rem;
     padding-top: 3.375rem;
-    background-image: url('../../../public/assets/img/fondo-logo.png'); /* Imagen de fondo */
-    background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
-    background-position: center -38%; /* Centra la imagen */
-    background-repeat: no-repeat;
-    
-    
+    background-image: url('../../../public/assets/img/fondo-logo.png'); 
+    background-size: cover; 
+    background-position: center -38%; 
+    background-repeat: no-repeat;  
   }
 
   .logo-container {
     position: relative;
     z-index: 1;
   }
-  /* Estilos del logo */
+  
   .initials {
     font-family: 'bodoni';
     font-size: 6rem;
@@ -59,10 +53,10 @@
     white-space: nowrap;
     pointer-events: none;
   }
-  /* Layout inferior */
+
   .sobre-mi-wrapper {
     display: flex;
-    align-items: center; /* Centra la foto de perfil y los textos verticalmente */
+    align-items: center; 
     gap: 3.125rem;
     padding: 1.875rem 0rem;
     margin: 0 auto;
@@ -75,22 +69,20 @@
     width: 100vw;
     margin-left: calc(-50vw + 50%);
     overflow: hidden;
-    box-shadow: 0 5px 10px rgba(122, 122, 122, 0.6);
+    box-shadow: 0 .3125rem .625rem rgba(122, 122, 122, 0.6);
     z-index: 2;
-    
   }
   
   .foto-perfil img {
-    width: 18.75rem; /* Antes: 160px */
+    width: 18.75rem; 
     height: 18.75rem;
     border-radius: 50%;
     object-fit: cover;
-    border: 4px solid #ccc;
+    border: .25rem solid #ccc;
   }
   
   .texto-presentacion {
-    max-width: 600px;
-    
+    max-width: 37.5rem;  
   }
   
   .texto-presentacion p {
@@ -100,25 +92,21 @@
     font-family: 'Lora', serif;
   }
   
- 
-  
   .texto-presentacion a.btn {
     margin-top: 1rem;
   }
   
   .texto-presentacion h3 {
     font-size: 1.8rem;
-    margin-top: 2rem; /* Nuevo: separa del logo o imagen de arriba */
+    margin-top: 2rem; 
     margin-bottom: 1rem;
-    font-family: 'Lora';
     color: #868486;
     font-family: 'Lora', serif;
-    
   }
 
   .texto-presentacion a.btn {
     margin-top: 1rem;
-    background-color: #b44995; /* Rosa suave */
+    background-color: #b44995; 
     border-color: #b44995;
     color: #fff;
     font-weight: bold;
@@ -149,10 +137,10 @@
   
   @media (max-width: 991px) {
     .logo-section {
-      height: 250px; /* o el valor que te guste más */
+      height: 15.625rem;
       padding-top: 2rem;
       padding-right: 2rem;
-      background-position: center center; /* ajusta posición si es necesario */
+      background-position: center center; 
     }
   
     .initials {
@@ -161,38 +149,37 @@
     
     .nombre-logo {
       font-size: clamp(1.5rem, 2vw, 2.2rem);
-      top: 55%; /* antes era 50%, ahora se baja un poco */
+      top: 55%; 
       transform: translate(-50%, -50%);
     }
 
     .logo-container{
       background-color: #b449966b;
-      padding: 0px 50px;
-      border-radius: 5px;
-      width: fit-content; /* 👈 Solo lo que necesita */
-      margin-left: 1rem;   /* 👈 Separación del borde izquierdo */
+      padding: 0rem 3.125rem;
+      border-radius: .3125rem;
+      width: fit-content; 
+      margin-left: 1rem;  
       display: block;
-      margin-top: 2rem; /* o prueba con padding-top: 0.5rem */
-    
-      
+      margin-top: 2rem; 
     }
+
     .foto-perfil img {
-      width: 12.5rem; /* Antes: 160px */
+      width: 12.5rem; 
       height: 12.5rem;
       border-radius: 50%;
       object-fit: cover;
-      border: 4px solid #ccc;
+      border: .25rem solid #ccc;
     }
 
     .sobre-mi-wrapper {
-      flex-direction: column; /* Coloca la foto arriba y el texto abajo */
-      gap: 0rem; /* Reduce el espacio entre foto y texto */
+      flex-direction: column; 
+      gap: 0rem; 
       text-align: center;
       padding: 1rem;
     }
     
     .texto-presentacion {
-      margin-top: 0; /* Elimina márgenes extra si los hay */
+      margin-top: 0; 
       padding: 0 1rem;
     }
     

@@ -1,17 +1,16 @@
-// src/data/imagenesDiseño.js
 
 export const imagenesDesarmario = [
     "/assets/img/DESARMARIO 400-400.png",
     "/assets/img/DESARMARIO 1920-1080-01.png",
     "/assets/img/BANNER.png",
-  // Agregás las demás imágenes de esta categoría
+  
 ];
 
 export const imagenesEsperanza = [
     "/assets/img/MI PUEBLO ESPERANZA1.png",
     "/assets/img/MI PUEBLO ESPERANZA3.png",
     "/assets/img/MI PUEBLO ESPERANZA2.png",
-  // Más imágenes
+  
 ];
 
 export const imagenesPoderJudicial = [

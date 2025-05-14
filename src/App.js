@@ -1,10 +1,13 @@
 import './App.css';
 import NavBar from './components/NavBar/NavBar';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import SobreMi from './components/SobreMi/SobreMi';
 import MisProyectos from './components/MisProyectos/MisProyectos';
+import Footer from './components/footer/footer';
 import Skills from './components/Skills/Skills';
 import { Component } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+
 
 
 function App() {
@@ -16,6 +19,7 @@ function App() {
         <SobreMi />
         <MisProyectos />
         <Skills />
+        <Footer />
 
       </main>
     </div>
