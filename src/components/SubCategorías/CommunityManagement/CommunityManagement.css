@@ -12,4 +12,25 @@
     background-color: #912873; /* Rosa más oscuro */
     border-color: #912873;
   }
+
+  .card-body{
+font-family: 'Lora', serif;
+  }
+
+.CommunityManagement p {
+  font-size: .875rem;
+  line-height: 1.5;
+  color: #666;
+  margin-top: 0;
+  line-height: 1.5;
   
+}
+
+.CommunityManagement h5 {
+    font-weight: bold;
+    color: #912873;
+    font-size: 1.125rem;
+    position: relative;
+    margin-top: 1rem; /* Ajustá este valor según el espacio que quieras */
+    margin-bottom: 0.5rem;
+}

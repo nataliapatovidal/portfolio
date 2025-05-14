@@ -1,57 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap');
 
-.diseño-grafico-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 4rem 5rem;
-  background-color: #f9f6f9;
-  flex-wrap: wrap;
-}
-
-.diseño-grafico-left {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  height: 100%;
-  position: relative;
-}
-
-.diseño-grafico-left h3 {
-  font-family: 'Lora', serif;
-  font-size: 2rem;
-  color: #b44995;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin: 1rem 0;
-}
-
-.diseño-grafico-left p {
-  font-size: 1rem;
-  color: #444;
-  font-style: italic;
-  margin-top: 0;
-}
-
-.lineas {
-  display: flex;
-  flex-direction: column;
-  gap: 0.4rem;
+.diseño-grafico {
+  background: linear-gradient(to bottom, 
+    rgba(233, 232, 230, 0) 0%, 
+    rgb(233, 232, 230) 10%, 
+    rgb(233, 232, 230) 90%,
+    rgb(233, 232, 230) 80%,  
+    rgb(233, 232, 230) 10%,  
+    rgba(233, 232, 230, 0) 100%);
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  padding: 0;
 }
 
 
-
-/* Cards a la derecha */
-.diseño-grafico-right {
-  flex: 2;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  align-items: flex-end;
-  margin-left: 2rem;
-}
 
 .card {
   max-width: 500px;
@@ -64,76 +26,33 @@
 }
 
 .card img {
-  width: 100%;
-  height: auto;
+  width: 100%; /* Hace que el video ocupe todo el ancho de la tarjeta */
+  height: auto; /* Mantiene la proporción del video */
+  object-fit: cover; /* Ajusta el contenido del video para que cubra el área sin distorsionarse */
   display: block;
+  margin-left: auto;
+  margin-right: auto; /* Centra el video horizontalmente */
 }
 
-.card-texto {
+.card-texto-diseño {
+  font-family: 'Lora', serif;
+  background-color: #fff;
   padding: 1rem;
 }
 
-.card-texto h5 {
-  color: #b44995;
-  font-weight: bold;
-  text-transform: uppercase;
-  font-size: 1.1rem;
+.card-texto-diseño p {
+  color: #666;
+  margin-top: 0;
+  font-size: .875rem;
+  line-height: 1.5;
+  
 }
 
-.card-texto p {
-  font-size: 0.95rem;
-  color: #555;
-}
-
-/* Escalonado */
-.escalonada-2 {
-  margin-right: 40px;
-}
-
-.escalonada-3 {
-  margin-right: 80px;
-}
-.card-texto h5 {
+.card-texto-diseño h5 {
     font-weight: bold;
-    text-transform: uppercase;
-    color: #b44995;
-    font-size: 1.1rem;
+    color: #912873;
+    font-size: 1.125rem;
     position: relative;
-}
-
-.card-texto h5::before {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 3px;
-    background: linear-gradient(to right, #ff92c2, rgba(255, 146, 194, 0)); /* Degradado que va desapareciendo */
-    margin-bottom: 1rem; /* Mantiene un buen espacio abajo de la línea */
-    border-radius: 2px;
-    position: absolute;
-    top: -10px; /* Este es el ajuste que aumenta el espacio entre la línea y el título */
-    left: 0;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .diseño-grafico-container {
-    flex-direction: column;
-    padding: 2rem;
-  }
-
-  .diseño-grafico-right {
-    align-items: center;
-    margin-left: 0;
-  }
-
-  .escalonada-2,
-  .escalonada-3 {
-    margin-right: 0;
-  }
-
-  .diseño-grafico-left {
-    align-items: center;
-    text-align: center;
-    margin-bottom: 2rem;
-  }
+    margin-top: 1rem; /* Ajustá este valor según el espacio que quieras */
+    margin-bottom: 0.5rem;
 }

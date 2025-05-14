@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap');
 
+
 .mis-proyectos h2 {
     font-family: 'Lora', serif;
     font-size: 1.75rem;
@@ -47,3 +48,28 @@
     }
   }
   
+.tabs-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.tab-btn {
+  background-color: #f0f0f0;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  font-family: 'Lora', serif;
+}
+
+.tab-btn.active {
+  background-color: #b44995;
+  color: white;
+}
+
+.tab-content {
+  margin-top: 2rem;
+}

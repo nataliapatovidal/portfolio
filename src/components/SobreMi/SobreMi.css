@@ -69,7 +69,7 @@
     flex-wrap: wrap;
     justify-content:center;
     text-align: center;
-    background-color:#e9e6e9;
+    background-color:#e9e8e6;
     background-size: cover;
     position: relative;
     width: 100vw;
@@ -148,7 +148,23 @@
   }
   
   @media (max-width: 991px) {
+    .logo-section {
+      height: 250px; /* o el valor que te guste más */
+      padding-top: 2rem;
+      padding-right: 2rem;
+      background-position: center center; /* ajusta posición si es necesario */
+    }
   
+    .initials {
+      font-size: 3.5rem;
+    }
+    
+    .nombre-logo {
+      font-size: clamp(1.5rem, 2vw, 2.2rem);
+      top: 55%; /* antes era 50%, ahora se baja un poco */
+      transform: translate(-50%, -50%);
+    }
+
     .logo-container{
       background-color: #b449966b;
       padding: 0px 50px;
@@ -156,5 +172,28 @@
       width: fit-content; /* 👈 Solo lo que necesita */
       margin-left: 1rem;   /* 👈 Separación del borde izquierdo */
       display: block;
+      margin-top: 2rem; /* o prueba con padding-top: 0.5rem */
+    
+      
     }
+    .foto-perfil img {
+      width: 12.5rem; /* Antes: 160px */
+      height: 12.5rem;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #ccc;
+    }
+
+    .sobre-mi-wrapper {
+      flex-direction: column; /* Coloca la foto arriba y el texto abajo */
+      gap: 0rem; /* Reduce el espacio entre foto y texto */
+      text-align: center;
+      padding: 1rem;
+    }
+    
+    .texto-presentacion {
+      margin-top: 0; /* Elimina márgenes extra si los hay */
+      padding: 0 1rem;
+    }
+    
   }

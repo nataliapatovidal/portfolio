@@ -9,11 +9,12 @@
   overflow-x: auto;
   gap: .3125rem;
   padding: .3125rem 5rem;
+  
 }
 
 .recuadro-skills h3 {
   font-family: 'Lora', serif;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   text-align: center;
   margin-bottom: 1.5rem;
   color: #868486;
@@ -24,11 +25,13 @@
 /* CONTENEDOR GENERAL DE HABILIDADES */
 .skills-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  gap: 15px;
-  padding: .3125rem 5rem;
+  gap: 10px;
+  flex-wrap: wrap; /* PERMITE MÚLTIPLES FILAS */
+  padding: .3125rem 1rem;
 }
+
 
 /* CADA ÍTEM DE HABILIDAD */
 .skill-item {
@@ -57,8 +60,8 @@
 /* ÍCONOS: FONT AWESOME Y SVG */
 .skill-item img,
 .skill-item .skill-icon {
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
 }
 
 /* COLORES PERSONALIZADOS POR HERRAMIENTA */
@@ -116,27 +119,25 @@
 /* RESPONSIVE: AJUSTES PARA PANTALLAS MÁS CHICAS */
 @media (max-width: 768px) {
   .skills-container {
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 1.5rem;
-    gap: 20px;
+    justify-content: center; /* CENTRADO EN MOBILE */
+    gap: 10px;
+    padding: 1rem;
   }
 
   .skill-item {
+    flex: 1 1 60px; /* Se adaptan al ancho disponible */
     max-width: 80px;
-    padding: 10px;
+    padding: 6px;
   }
 
   .skill-item img,
   .skill-item .skill-icon {
-    width: 40px;
-    height: 40px;
+    width: 24px;
+    height: 24px;
   }
 
   .skill-item p {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     text-align: center;
-    text-transform: uppercase; /* Para que el texto dentro de los íconos también esté en mayúsculas */
   }
 }
-

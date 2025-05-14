@@ -1,39 +1,71 @@
 import React from 'react';
+import { Carousel, Row, Col } from 'react-bootstrap';
 import './DiseñoGrafico.css';
+import {
+  imagenesDesarmario,
+  imagenesEsperanza,
+  imagenesPoderJudicial
+} from './imagenesDiseño';
 
 const DiseñoGrafico = () => {
   return (
-    <section id="DiseñoGrafico" className="diseño-grafico-container">
-      <div className="diseño-grafico-left">
-        <h3>Diseño Gráfico</h3>
-        <p>Identidad visual</p>
-      </div>
+    <section id="DiseñoGrafico" className="diseño-grafico py-5">
+      <div className="container px-4 px-md-5">
+        <div className="row justify-content-center">
+          <Row className="g-4 justify-content-center">
+              <Col lg={4} md={6}>
+                <div className="card">
+                  <div className="card-texto-diseño">
+                    <Carousel>
+                      {imagenesDesarmario.map((src, i) => (
+                      <Carousel.Item key={i}>
+                      <img className="d-block w-100" src={src} alt={`Desarmario ${i + 1}`} />
+                      </Carousel.Item>
+                      ))}
+                    </Carousel>
+                    <h5>Desarmario - Diseño para obra de teatro</h5>
+                    <p>Obra teatral, realicé el diseño de la identidad visual completa. Me encargué de la cartelería, el diseño de banners para difusión, folletos informativos y calcomanías promocionales. Todo el material fue pensado para acompañar el enfoque crítico y actual de la obra.</p>
+                  </div>
+                    
+                </div>
+              </Col>
 
-      <div className="diseño-grafico-right">
-        <div className="card escalonada escalonada-1">
-        <div className="card-texto">
-            <h5>Identidad Visual</h5>
-            <p>Rediseño de marca para una tienda de ropa urbana.</p>
-          </div>
-          <img src="ruta-a-tu-imagen1.jpg" alt="Proyecto 1" />
-        </div>
+            {/* Card 2 - Mi Pueblo Esperanza */}
+              <Col lg={4} md={6}>
+                <div className="card">
+                  <div className="card-texto-diseño">
+                    <Carousel>
+                      {imagenesEsperanza.map((src, i) => (
+                      <Carousel.Item key={i}>
+                        <img className="d-block w-100" src={src} alt={`Esperanza ${i + 1}`} />
+                      </Carousel.Item>
+                      ))}
+                    </Carousel>
+                    <h5>Mi Pueblo Esperanza - Gráfica con identidad local</h5>
+                    <p>Obra teatral, trabajé también en el diseño gráfico aplicado a su comunicación. Desarrollé el afiche principal, un banner institucional, folletos de mano para entregar al público y calcomanías ilustradas.</p>
+                  </div>
+                </div>
+              </Col>
 
-        <div className="card escalonada escalonada-2">
-        <div className="card-texto">
-            <h5>Editorial</h5>
-            <p>Diseño de revista cultural con estilo minimalista.</p>
+            {/* Card 3 - Poder Judicial */}
+              <Col lg={4} md={6}>
+                <div className="card">
+                  <div className="card-texto-diseño">
+                    <Carousel>
+                    {imagenesPoderJudicial.map((src, i) => (
+                      <Carousel.Item key={i}>
+                        <img className="d-block w-100" src={src} alt={`Poder Judicial ${i + 1}`} />
+                      </Carousel.Item>
+                      ))}
+                  </Carousel>
+                    <h5>Poder Judicial Santiago del Estero</h5>
+                    <p>Diseños institucionales para el Poder Judicial. Realicé salutaciones festivas, avisos de diario, campañas de prevención y comunicaciones con teléfonos y direcciones de los tribunales del interior.</p>
+                  </div>
+                </div>
+              </Col>
+            </Row>
           </div>
-          <img src="ruta-a-tu-imagen2.jpg" alt="Proyecto 2" />
         </div>
-
-        <div className="card escalonada escalonada-3">
-        <div className="card-texto">
-            <h5>Afiches</h5>
-            <p>Serie de afiches para eventos musicales en Córdoba.</p>
-          </div>
-          <img src="ruta-a-tu-imagen3.jpg" alt="Proyecto 3" />
-        </div>
-      </div>
     </section>
   );
 };
