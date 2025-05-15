@@ -24,7 +24,7 @@ const SobreMi = () => {
           <span className="nombre-logo">Natalia Vidal</span>
         </div>
       </div>
-      <div className="sobre-mi-wrapper container-fluid">
+      <div className="sobre-mi-wrapper ">
         
         <div className="foto-perfil">
           <img src="/perfil.png" alt="Foto de Natalia Vidal" />

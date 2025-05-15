@@ -10,6 +10,12 @@
     src: url('../../../public/assets/fonts/AmsterdamOne-eZ12l.ttf') format('truetype');
 }
 
+#SobreMi {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
 .logo-section {
     position: relative;
     width: 100vw;
@@ -66,10 +72,10 @@
     background-color:#e9e8e6;
     background-size: cover;
     position: relative;
-    width: 100vw;
-    margin-left: calc(-50vw + 50%);
     overflow: hidden;
     box-shadow: 0 .3125rem .625rem rgba(122, 122, 122, 0.6);
+    margin-left: calc(-50vw + 50%);
+    width: 100vw;
     z-index: 2;
   }
   
