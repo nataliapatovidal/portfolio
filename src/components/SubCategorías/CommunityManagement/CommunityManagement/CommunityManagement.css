@@ -14,17 +14,17 @@
 
 
 .btn-primary {
-    background-color: #b44995;
-    border-color: #b44995;
-    color: #fff;
+    background-color: #b44995 !important;
+    border-color: #b44995 !important;
+    color: #fff !important;
     font-weight: bold;
     transition: all 0.3s ease;
     margin-top: 1rem; 
   }
   
   .btn-primary:hover {
-    background-color: #912873; 
-    border-color: #912873;
+    background-color: #912873 !important; 
+    border-color: #912873 !important;
   }
 
   .card-body{
