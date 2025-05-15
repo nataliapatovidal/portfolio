@@ -16,13 +16,14 @@
 
 
 .card {
-  max-width: 31.25rem;
+  max-width: 24rem;
   width: 100%;
   background-color: #fff;
   border-radius: .75rem;
   overflow: hidden;
   box-shadow: 0 .3125rem .9375rem rgba(0,0,0,0.1);
   transition: transform 0.3s ease;
+  margin-bottom: 0.5rem;
 }
 
 .card img {

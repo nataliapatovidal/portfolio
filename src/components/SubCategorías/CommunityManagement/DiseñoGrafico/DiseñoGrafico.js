@@ -4,16 +4,20 @@ import './DiseñoGrafico.css';
 import {
   imagenesDesarmario,
   imagenesEsperanza,
-  imagenesPoderJudicial
+  imagenesPoderJudicial,
+  imagenesCatalogoObras,
+  imagenesCurriculumObras
 } from './imagenesDiseño';
 
 const DiseñoGrafico = () => {
   return (
     <section id="DiseñoGrafico" className="diseño-grafico py-3">
-      <div className="container px-4 px-md-6">
+      <div className="container px-3 px-md-6">
         <div className="row justify-content-center">
-          <Row className=" justify-content-center">
-              <Col lg={4} md={6}>
+          <Row className=" justify-content-center g-1">
+
+              <Col lg={4} md={6} className="mb-4">
+
                 <div className="card">
                   <div className="card-texto-diseño">
                     <Carousel>
@@ -30,7 +34,8 @@ const DiseñoGrafico = () => {
                 </div>
               </Col>
 
-              <Col lg={4} md={6}>
+              <Col lg={4} md={6} className="mb-4">
+
                 <div className="card">
                   <div className="card-texto-diseño">
                     <Carousel>
@@ -46,7 +51,8 @@ const DiseñoGrafico = () => {
                 </div>
               </Col>
 
-              <Col lg={4} md={6}>
+              <Col lg={4} md={6} className="mb-4">
+
                 <div className="card">
                   <div className="card-texto-diseño">
                     <Carousel>
@@ -61,6 +67,41 @@ const DiseñoGrafico = () => {
                   </div>
                 </div>
               </Col>
+
+              <Col lg={4} md={6} className="mb-4">
+
+                <div className="card">
+                  <div className="card-texto-diseño">
+                    <Carousel>
+                    {imagenesCatalogoObras.map((src, i) => (
+                      <Carousel.Item key={i}>
+                        <img className="d-block w-100" src={src} alt={`Catálogo Obras ${i + 1}`} />
+                      </Carousel.Item>
+                      ))}
+                  </Carousel>
+                    <h5>Diseño de catálogo: Obras y Proyectos</h5>
+                    <p>Para esta sección desarrollé un diseño limpio y funcional, destacando la solidez de las estructuras y su adaptabilidad a distintos espacios. Utilicé una paleta sobria y jerarquías visuales claras para resaltar cada proyecto con profesionalismo y coherencia visual.</p>
+                  </div>
+                </div>
+              </Col>
+
+               <Col lg={4} md={6} className="mb-4">
+
+                <div className="card">
+                  <div className="card-texto-diseño">
+                    <Carousel>
+                    {imagenesCurriculumObras.map((src, i) => (
+                      <Carousel.Item key={i}>
+                        <img className="d-block w-100" src={src} alt={`Curriculum Obras ${i + 1}`} />
+                      </Carousel.Item>
+                      ))}
+                  </Carousel>
+                    <h5>Diseño de Currículum: Obras y Proyectos</h5>
+                    <p>Desarrollé piezas gráficas y contenidos visuales para presentar obras y proyectos de estructuras metálicas, destacando la funcionalidad, estética y solidez de cada realización. Mi enfoque se centró en comunicar de forma clara y atractiva las soluciones constructivas, cuidando la coherencia visual y la identidad de marca en cada pieza.</p>
+                  </div>
+                </div>
+              </Col>
+
             </Row>
           </div>
         </div>
